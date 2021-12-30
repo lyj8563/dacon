@@ -1,9 +1,8 @@
 ## 2021년 잡케어 추천 알고리즘 경진대회
 
-* 전체적인 코드는 [HRNet code](https://github.com/leoxiaobin/deep-high-resolution-net.pytorch#readme)를 참조하여 만들었습니다.
-  * 논문 : [Deep high-resolution representation learning for human pose estimation](https://arxiv.org/pdf/1902.09212v1.pdf) (2019, Sun, Ke, et al.)
-* bbox, keypoint를 만드는 코드가 폴더로 나뉘어 있습니다.
-  * 둘이 거의 유사한 코드라 용도에 따라 2개를 합칠 수도 있습니다.
+* 참조 코드 & 링크
+  * 참조 논문
+
 
 ### 컴퓨터 환경
 * CPU : 
