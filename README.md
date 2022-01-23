@@ -25,12 +25,12 @@
 ### 환경 셋팅 및 실행 프로세스
 
 1. 데이터 전처리
- - eli5_permutation feature importance 기반 데이터 전처리
+  eli5_permutation feature importance 기반 데이터 전처리
 
 2. Optuna
- - best parameter 추출
+  best parameter 추출
 
 3. Catboost
- - 모델 적합
+  모델 적합
 
 
