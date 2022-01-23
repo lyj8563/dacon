@@ -1,7 +1,7 @@
 ## 2021년 잡케어 추천 알고리즘 경진대회_테이브팀
 
-* 참조 코드 & 링크
-  * 참조 논문
+* 참조 코드
+  * [catboost 모델](/content/drive/MyDrive/데이콘/Jobcare_data) 
 
 
 ### 컴퓨터 환경
@@ -11,23 +11,26 @@
 * 운영체제 : 
 
 ### 라이브러리 버전
-* ~
-* ~
+* catboost : 1.0.4
+* eli5 : 0.11.0
+* optuna : 2.10.0
+* numpy : 1.19.5
+* pandas : 1.1.5
+* sklearn : 1.0.1
 
 ### 학습 소요 시간
-* bbox : 10시간 (1 epoch 당 평균 3분 소요)
-* keypoint : 12시간 (1 epoch 당 평균 3분 40초 소요)
+* optuna : 2시간 30분
+* catboost : 
 
 ### 환경 셋팅 및 실행 프로세스
-※ 괄호로 표현한 부분은 임의의 변수명으로 넣으시면 됩니다.
 
 1. 데이터 전처리
+ - eli5_permutation feature importance 기반 데이터 전처리
 
-2. 피처 엔지니어링
+2. Optuna
+ - best parameter 추출
 
-3. 핵심 모델
-* catboost
-* optuna
-* eli5
+3. Catboost
+ - 모델 적합
 
 
