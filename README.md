@@ -1,7 +1,7 @@
 ## 2021년 잡케어 추천 알고리즘 경진대회_테이브팀
 
 * 참조 코드
-  * [catboost 모델](/content/drive/MyDrive/데이콘/Jobcare_data) 
+  * [catboost 모델](https://dacon.io/competitions/official/235863/codeshare/3887?page=1&dtype=recent) 
 
 
 ### 컴퓨터 환경
