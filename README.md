@@ -86,7 +86,7 @@ Best Params: {'iterations': 1422, 'objcetive': 'CrossEntropy', 'bootstrap_type':
 ## 4.결과값제출
 train을 K-fold한 값의 평균을 구하다 보니 예측값의 극단값이 작아질 수 밖에 없습니다.
 
-따라서 threshold를 조정해가며 최적의 threshold : 0.33791를 찾았습니당
+따라서 threshold를 조정해가며 최적의 threshold : 0.33792를 찾았습니당
 
 ```py
 cols_drop = ["id","person_prefer_f","person_prefer_g" ,
