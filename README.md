@@ -37,13 +37,33 @@
 ### 데이터 로드
 
 ## 2. Data Preprocess
-속성_D_코드.csv,속성_L_코드.csv,속성_H_코드.csv를 학습데이터에 추가하기 위해 데이터 병합을 진행했고 Eli5에서 제외한 학습에 방해가 되는 코드는 학습 피쳐에서 제외했습니다.
+- 속성_D_코드.csv,속성_L_코드.csv,속성_H_코드.csv를 학습데이터에 추가하기 위해 데이터 병합을 진행했고 Eli5에서 제외한 학습에 방해가 되는 코드는 학습 피쳐에서 제외했습니다.
 
-머지,제외, 컬드랍
+- Eli5 패키지의 permutation feature importance로 catboostclassifier모델을 진행하는데 있어 제외할 컬럼을 미리 선정했습니다. 또한 cat_feature에 범주형 칼럼리스트를 만들어 학습에 용이하게 했습니다.
 
-Eli5로 catboostclassifier모델을 진행하는데 있어 제외할 컬럼을 미리 선정했습니다. 또한 cat_feature에 범주형 칼럼리스트를 만들어 학습에 용이하게 했습니다.
+```py
+import os
+import sys
+import platform
+import random
+import math
+from typing import List ,Dict, Tuple
 
-eli5, cat_feature
+import pandas as pd
+import numpy as np
+ 
+import sklearn 
+from sklearn.model_selection import StratifiedKFold , KFold
+from sklearn.metrics import f1_score 
+
+from catboost import Pool,CatBoostClassifier
+
+print(f"- os: {platform.platform()}")
+print(f"- python: {sys.version}")
+print(f"- pandas: {pd.__version__}")
+print(f"- numpy: {np.__version__}")
+print(f"- sklearn: {sklearn.__version__}")
+```
 
 ## 3. 모델링
 Optuna로 Random Search를 통해 Catboost 최적의 파라미터를 사용하였습니다.
