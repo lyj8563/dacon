@@ -1,7 +1,7 @@
-## 제목 : 최종결과물: Catboost
+## 최종결과물: Catboost_테이브팀
 범주형 변수에 강력한 성능을 보여주는 catboost를 이용하여 코드를 작성해 봤습니다. 
 구글 코랩에서 작성하였고, GPU를 이용하여 학습 했습니다.
-최종 예측 파일 threshold값을 조정해서 재현율을 끌어올려 LB 점수에서 효과를 봤습니다. 참고가 되었으면 좋겠습니다. 
+최종 예측 파일 threshold값을 조정해서 재현율을 끌어올려 LB 점수에서 효과를 봤습니다.
 
 (아래코드는 국경원 요원님의 잡케어 추천 알고리즘 경진대회 [Private 8위 0.66203] | Catboost 코드를 참고하여 수정하였습니다.)
 [참조 코드](https://dacon.io/competitions/official/235863/codeshare/3887?page=1&dtype=recent)
@@ -50,7 +50,7 @@ Optuna로 Random Search를 통해 Catboost 최적의 파라미터를 사용하�
 objective 함수의 param에 파라미터를 넣고, 구간을 넣으면 랜덤한 값으로 학습되며 f1-score값이 반환되는 함수입니다. "trial"에 반복 횟수를 작성하면 됩니다.
 
 
-Optuna주석처리로해서
+Optuna 주석처리로해서
 
 
 Catboost 특성상 학습이 오래 걸리기 때문에 최적의 파라미터를 찾아 Best_params로 정의하였습니다.
